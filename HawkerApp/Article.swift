@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class Article {
+    var position: Int?
+    var audioLink: String?
+    var articleLink: String?
+    var tableViewImage: String?
+    var articleName: String?
+    var audioBreakpoints: [(Float, Float)]?
+    
+}

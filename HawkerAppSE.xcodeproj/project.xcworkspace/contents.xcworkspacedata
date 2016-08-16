@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HawkerApp.xcodeproj">
+      location = "self:/Users/EdouM/Desktop/HawkerAppSE/HawkerAppSE.xcodeproj">
    </FileRef>
 </Workspace>

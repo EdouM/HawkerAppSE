@@ -30,7 +30,7 @@
 		966E89B51D12D98C00F476ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9676AE181CFF2F6B005E1EBE /* ArticlesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewController.swift; sourceTree = "<group>"; };
 		9676AE1E1CFF459C005E1EBE /* articleEnergie.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = articleEnergie.html; sourceTree = "<group>"; };
-		967D32831CFC5CDA00EB57BF /* HawkerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HawkerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		967D32831CFC5CDA00EB57BF /* HawkerAppSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HawkerAppSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967D32861CFC5CDA00EB57BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		967D328B1CFC5CDA00EB57BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		967D32901CFC5CDA00EB57BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		967D32841CFC5CDA00EB57BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				967D32831CFC5CDA00EB57BF /* HawkerApp.app */,
+				967D32831CFC5CDA00EB57BF /* HawkerAppSE.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,9 +99,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		967D32821CFC5CDA00EB57BF /* HawkerApp */ = {
+		967D32821CFC5CDA00EB57BF /* HawkerAppSE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 967D32951CFC5CDA00EB57BF /* Build configuration list for PBXNativeTarget "HawkerApp" */;
+			buildConfigurationList = 967D32951CFC5CDA00EB57BF /* Build configuration list for PBXNativeTarget "HawkerAppSE" */;
 			buildPhases = (
 				967D327F1CFC5CDA00EB57BF /* Sources */,
 				967D32801CFC5CDA00EB57BF /* Frameworks */,
@@ -111,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = HawkerApp;
+			name = HawkerAppSE;
 			productName = HawkerApp;
-			productReference = 967D32831CFC5CDA00EB57BF /* HawkerApp.app */;
+			productReference = 967D32831CFC5CDA00EB57BF /* HawkerAppSE.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +133,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 967D327E1CFC5CDA00EB57BF /* Build configuration list for PBXProject "HawkerApp" */;
+			buildConfigurationList = 967D327E1CFC5CDA00EB57BF /* Build configuration list for PBXProject "HawkerAppSE" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -146,7 +146,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				967D32821CFC5CDA00EB57BF /* HawkerApp */,
+				967D32821CFC5CDA00EB57BF /* HawkerAppSE */,
 			);
 		};
 /* End PBXProject section */
@@ -314,7 +314,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		967D327E1CFC5CDA00EB57BF /* Build configuration list for PBXProject "HawkerApp" */ = {
+		967D327E1CFC5CDA00EB57BF /* Build configuration list for PBXProject "HawkerAppSE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				967D32931CFC5CDA00EB57BF /* Debug */,
@@ -323,7 +323,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		967D32951CFC5CDA00EB57BF /* Build configuration list for PBXNativeTarget "HawkerApp" */ = {
+		967D32951CFC5CDA00EB57BF /* Build configuration list for PBXNativeTarget "HawkerAppSE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				967D32961CFC5CDA00EB57BF /* Debug */,

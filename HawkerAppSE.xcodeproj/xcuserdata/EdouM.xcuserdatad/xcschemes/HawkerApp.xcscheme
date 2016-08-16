@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "967D32821CFC5CDA00EB57BF"
-               BuildableName = "HawkerApp.app"
-               BlueprintName = "HawkerApp"
-               ReferencedContainer = "container:HawkerApp.xcodeproj">
+               BuildableName = "HawkerAppSE.app"
+               BlueprintName = "HawkerAppSE"
+               ReferencedContainer = "container:HawkerAppSE.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "967D32821CFC5CDA00EB57BF"
-            BuildableName = "HawkerApp.app"
-            BlueprintName = "HawkerApp"
-            ReferencedContainer = "container:HawkerApp.xcodeproj">
+            BuildableName = "HawkerAppSE.app"
+            BlueprintName = "HawkerAppSE"
+            ReferencedContainer = "container:HawkerAppSE.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "967D32821CFC5CDA00EB57BF"
-            BuildableName = "HawkerApp.app"
-            BlueprintName = "HawkerApp"
-            ReferencedContainer = "container:HawkerApp.xcodeproj">
+            BuildableName = "HawkerAppSE.app"
+            BlueprintName = "HawkerAppSE"
+            ReferencedContainer = "container:HawkerAppSE.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "967D32821CFC5CDA00EB57BF"
-            BuildableName = "HawkerApp.app"
-            BlueprintName = "HawkerApp"
-            ReferencedContainer = "container:HawkerApp.xcodeproj">
+            BuildableName = "HawkerAppSE.app"
+            BlueprintName = "HawkerAppSE"
+            ReferencedContainer = "container:HawkerAppSE.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

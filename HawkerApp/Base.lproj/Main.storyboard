@@ -1,25 +1,148 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="16A286a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="EJW-kv-Mk5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Article View Controller-->
+        <scene sceneID="Mud-7P-XfH">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zak-Vo-LcT" customClass="ArticleViewController" customModule="HawkerAppSE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="F1o-KH-7NC"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZDX-8D-qfp"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="wNk-V0-RNT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTB-18-iXN">
+                                <frame key="frameInset" minX="275" minY="277" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="round-play-button"/>
+                                <connections>
+                                    <action selector="PlayPause:" destination="Zak-Vo-LcT" eventType="touchUpInside" id="vxk-1U-lq4"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HeT-e6-7sr">
+                                <frame key="frameInset" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="KPd-du-zKX">
+                                <frame key="frameInset" minX="267" minY="210" width="176" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxZ-KH-PVW">
+                                <frame key="frameInset" minX="287" minY="240" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="next-button"/>
+                                <connections>
+                                    <action selector="nextArticle:" destination="Zak-Vo-LcT" eventType="touchUpInside" id="8nK-33-PSh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUe-t7-kvB">
+                                <frame key="frameInset" minX="287" minY="329" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="previous-button"/>
+                                <connections>
+                                    <action selector="previousArticle:" destination="Zak-Vo-LcT" eventType="touchUpInside" id="pl8-Og-jnX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBU-5e-aaG">
+                                <frame key="frameInset" minX="270" minY="274" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="pause-round-button"/>
+                                <connections>
+                                    <action selector="Pause:" destination="Zak-Vo-LcT" eventType="touchUpInside" id="CKw-6z-Lom"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HeT-e6-7sr" firstAttribute="height" secondItem="wNk-V0-RNT" secondAttribute="height" id="Jbr-M6-G7c"/>
+                            <constraint firstItem="HeT-e6-7sr" firstAttribute="width" secondItem="wNk-V0-RNT" secondAttribute="height" multiplier="375:667" id="Mu1-CV-Wl8"/>
+                            <constraint firstItem="HeT-e6-7sr" firstAttribute="width" secondItem="wNk-V0-RNT" secondAttribute="width" id="kkx-iB-BXy"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="utP-vQ-X0L"/>
+                    <connections>
+                        <outlet property="articlePauseButton" destination="FBU-5e-aaG" id="bjO-KO-EGO"/>
+                        <outlet property="articlePlayButton" destination="tTB-18-iXN" id="jyq-oW-cov"/>
+                        <outlet property="articleWebView" destination="HeT-e6-7sr" id="cd0-9m-Fj4"/>
+                        <outlet property="nextButton" destination="zxZ-KH-PVW" id="mx2-Pe-79T"/>
+                        <outlet property="pauseBackground" destination="KPd-du-zKX" id="xJH-gJ-0oh"/>
+                        <outlet property="previousButton" destination="fUe-t7-kvB" id="Fn9-On-hXz"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mtC-TV-osx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="805" y="381"/>
+        </scene>
+        <!--Le Journal-->
+        <scene sceneID="oVn-Dn-E58">
+            <objects>
+                <tableViewController modalPresentationStyle="pageSheet" id="0st-j8-QTP" customClass="ArticlesTableViewController" customModule="HawkerAppSE" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="123" sectionHeaderHeight="18" sectionFooterHeight="18" id="f2y-Mh-hGW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ArticleCell" rowHeight="123" id="Tcj-gH-kaD">
+                                <rect key="frame" x="0.0" y="120" width="320" height="123"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tcj-gH-kaD" id="mXH-Cv-Qm6">
+                                    <frame key="frameInset" width="287" height="122"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Zak-Vo-LcT" kind="push" identifier="ShowArticle" id="9Fa-EK-9eb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0st-j8-QTP" id="6bl-Pk-kPa"/>
+                            <outlet property="delegate" destination="0st-j8-QTP" id="KHC-Qg-HWq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Le Journal" id="h3A-TC-WR6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2Z-vP-63e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279.5" y="381.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mew-o6-o5G">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EJW-kv-Mk5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NSq-qb-HSR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0st-j8-QTP" kind="relationship" relationship="rootViewController" id="DWq-EY-60r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ct-tw-bgt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-253" y="381"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circle" width="333" height="333"/>
+        <image name="next-button" width="1676" height="1676"/>
+        <image name="pause-round-button" width="1676" height="1676"/>
+        <image name="previous-button" width="1676" height="1676"/>
+        <image name="round-play-button" width="1676" height="1686"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_0.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>
